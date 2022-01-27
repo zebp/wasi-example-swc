@@ -1,0 +1,15 @@
+[package]
+name = "swc-wasi"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+swc = { git = "https://github.com/swc-project/swc", default-features = false }
+swc_ecmascript = { git = "https://github.com/swc-project/swc" }
+swc_ecma_minifier = { git = "https://github.com/swc-project/swc" }
+
+[profile.release]
+lto = true
+opt-level = "s"
