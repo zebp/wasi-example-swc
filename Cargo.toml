@@ -6,9 +6,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-swc = { git = "https://github.com/swc-project/swc", default-features = false }
-swc_ecmascript = { git = "https://github.com/swc-project/swc" }
-swc_ecma_minifier = { git = "https://github.com/swc-project/swc" }
+swc = "0.120.0"
+swc_ecma_minifier = "0.71.4"
+swc_ecmascript = "0.111.10"
 
 [profile.release]
 lto = true
