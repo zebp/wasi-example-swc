@@ -45,6 +45,11 @@ And that's it! You're ready to play with your worker!
 
 ## Running it
 
-TODO: Update this when wrangler2 has wasi support
+Thankfully [wrangler2](https://github.com/cloudflare/wrangler2/) makes interacting with our wasm super easy, all we need to do to run swc is:
 
-`npx wrangler@dev dev ./target/wasm32-wasi/release/swc-wasi.wasm`
+`npx wrangler@wasm dev ./target/wasm32-wasi/release/swc-wasi.wasm`
+
+### Note
+
+Currently WASI support inside of [wrangler2](https://github.com/cloudflare/wrangler2/) has not landed in the main branch, but is published to NPM under an experimental `wasm` tag.
+
